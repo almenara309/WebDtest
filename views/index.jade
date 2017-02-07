@@ -1,29 +1,21 @@
-doctype html
-html(lang='en')
- head
-  title WebDtest
-  link(href='css/bootstrap.css', rel='stylesheet')
-  link(href='js/bootstrap.js', rel='stylesheet')
- container 
-  nav.navbar.navbar-default(role='navigation')
-   .navbar-header
+link(href='css/bootstrap.min.css', rel='stylesheet')
+
+nav.navbar.navbar-default(role='navigation')
+  .navbar-header
     button.navbar-toggle(type='button', data-target='#navbarCollapse', data-toggle='collapse')
       span.sr-only Toggle navigation
       span.icon-bar
       span.icon-bar
       span.icon-bar
-    a.button.btn
-     button.btn.btn-primary(type='button') Automatico
-     button.btn.btn-info(type='button') Dormir
-     button.btn.btn-danger(type='button') Alarma
     a.navbar-brand(href='#') Logotipo
-   #navbarCollapse.collapse.navbar-collapse
-     ul.nav.navbar-nav.navbar-right
-       li.active
-         a(href='#') Inicio
-       li
-         a(href='#') Luz
-       li
-         a(href='#') Clima
-       li
-         a(href='#') Configuracion
+  #navbarCollapse.collapse.navbar-collapse
+    ul.nav.navbar-nav
+      li.active
+        a(href='#') Inicio
+      li
+        a(href='#') Acerca de
+      li
+        a(href='#') Blog
+      li
+        a(href='#') Contacto
+
