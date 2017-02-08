@@ -44,4 +44,4 @@ app.get("/datos",function(solicitud,respuesta){
 	respuesta.render("creardatos");
 });
 
-console.log("Servidor web iniciado");
+console.log("Servidor weeb iniciado");
