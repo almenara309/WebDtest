@@ -17,13 +17,13 @@ app.use(method_override("_method"));
 
 //Definir el schema 
 var datosSchemaJSON = {
-	tipo:String, 
+	tipo:Number, 
 	temperatura : Number ,
-	estado: Boolean,
-	enchufes: Boolean,
-	modo: String,
-	sensor1 : Boolean,
-	sensor2: Boolean,
+	estado: Number,
+	enchufes: Number,
+	modo: Number,
+	sensor1 : Number,
+	sensor2: Number,
 	luz1: Number,
 	luz2: Number,
 	luz3: Number,
