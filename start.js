@@ -7,11 +7,12 @@ var Schema = mongoose.Schema;
 
 var app = express();
 
-mongoose.connect("mongodb://localhost/DB/datos");
+mongoose.connect("mongodb://192.168.30.106/datos");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(multer({dest: "./uploads"}));
+var multer = require('multer');
+var upload = multer({ dest: './uploads' });
 app.use(method_override("_method"));
 
 //Definir el schema 
